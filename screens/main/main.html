@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <title>Survey App</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-8">
+              <form id="regForm">
+                  <h1 id="register">Survey Form</h1>
+                  <div class="all-steps" id="all-steps"> 
+                    <span class="step"><i class="fa fa-user"></i></span> 
+                    <span class="step"><i class="fa fa-map-marker"></i></span>
+                    <span class="step"><i class="fa fa-shopping-bag"></i></span>
+                    <span class="step"><i class="fa fa-car"></i></span>
+                    <span class="step"><i class="fa fa-spotify"></i></span>
+                    <span class="step"><i class="fa fa-mobile-phone"></i></span>
+                  </div>
+  
+                  <div class="tab">
+                    <h6>What's your name?</h6>
+                      <p>
+                        <input placeholder="Name..." oninput="this.className = ''" name="fname"></p>
+                  </div>
+                  <div class="tab">
+                    <h6>What's your city?</h6>
+                      <p><input placeholder="City" oninput="this.className = ''" name="city"></p>
+                      
+                  </div>
+                  <div class="tab">
+                      <h6>What's your Favourite Shopping site?</h6>
+                      <p><input placeholder="Favourite Shopping site" oninput="this.className = ''" name="site"></p>
+                   
+                  </div>
+                  <div class="tab">
+                      <h6>What's your Favourite car?</h6>
+                      <p><input placeholder="Favourite car" oninput="this.className = ''" name="car"></p>
+                  </div>
+  
+                  <div class="tab">
+                      <h6>What's your Favourite Song?</h6>
+                      <p><input placeholder="Favourite Song" oninput="this.className = ''" name="song"></p>
+                  </div>
+  
+  
+                  <div class="tab">
+                      <h6>What's your Favourite Mobile brand?</h6>
+                      <p><input placeholder="Favourite Mobile Brand" oninput="this.className = ''" name="mobile"></p>
+                  </div>
+                  <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                      <h3>Thankyou for your feedback!</h3> <span>Thanks for your valuable information. It helps us to improve our services!</span>
+                  </div>
+                  <div style="overflow:auto;" id="nextprevious">
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-double-left"></i></button> 
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-double-right"></i></button> </div>
+                  </div>
+              </form>
+              <div>
+                <a href="#" onclick="location.reload()">Reload Page</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/idb@7/build/umd.js"></script>
+  <script type="text/javascript" src="mainView.js"></script>
+  </body>
+</html>

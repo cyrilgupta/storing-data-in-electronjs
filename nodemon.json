@@ -1,0 +1,6 @@
+{
+    "ignore": [
+        "userdata/"
+    ],
+    "ext": "js,json,html"
+}
